@@ -1,6 +1,6 @@
-let correctAnswer=localStorage.getItem('correctAnswer')
-const wrong = 10-correctAnswer; // Questo cambia il valore del cerchio blu in base al numero di risposte sbagliate.
-console.log(wrong)
+let correctAnswer = localStorage.getItem("correctAnswer");
+const wrong = 10 - correctAnswer; // Questo cambia il valore del cerchio blu in base al numero di risposte sbagliate.
+console.log(wrong);
 function showResult(input) {
   if (input <= 4) {
     console.log(
@@ -71,7 +71,7 @@ function showResultPercentage(input) {
 showResultPercentage(wrong);
 
 const button = (document.getElementById("button").onclick = function () {
-  window.location.href = "/feedback.html";
+  window.location.href = "feedback.html";
 });
 
 //QUESTA FUNZIONE MOSTRA IL TESTO DENTRO IL CERCHIO SE PASSI O NO L'ESAME
